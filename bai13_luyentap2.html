@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // //bai 1:
+    // let a = [
+    //     [1, 2, 4, 8],
+    //     [2, 4, 5, 6],
+    //     [1, 4, 5, 3],
+    //     [3, 4, 5, 1],
+    //     [3, 4, 8, 10]
+    // ];
+    // let count = 0;
+    // for (let i = 0; i < a.length; i++) {
+    //     document.write("row :" +(i+1) +"<br>")
+    //     for (let j = 0; j < a[i].length; j++) {
+    //         document.write(a[i][j] + "<br>");
+    //     }
+    // }
+    // for (let i = 0; i < a.length; i++) {
+    //     document.write("column :" +(i+1) +"<br>")
+    //     for (let j = 0; j < a[i].length; j++) {
+    //         document.write(a[j][i] + "<br>");
+    //     }
+    // }
+    //bai 2:
+    // let arr = [];
+    // do {
+    //     length = +prompt("nhập độ dài của mảng: ");
+    //     if (!Number.isInteger(length) || length <= 0 || isNaN(length)) {
+    //         alert("độ dài của mảng là 1 số nguyên lớn hơn 0!!! Vui lòng nhập lại.");
+    //     }
+    // } while (!Number.isInteger(length) || length <= 0 || isNaN(length));
+    // for (let i = 0; i < length; i++) {
+    //     arr[i] = +prompt(" nhập vào các giá trị của mảng: ");
+    // }
+    // //cach 1:
+    // // let first = 0;
+    // // let last = length-1;
+    // // while (first < last){
+    // //     let b = arr[first];
+    // //     arr[first] = arr[last];
+    // //     arr[last] = b;
+    // //     first++;
+    // //     last--;
+    // // }
+    // // document.write(arr.join(''));
+    // //cach 2:
+    // let arr1 = arr.reverse();
+    // document.write(arr1.join(''));
+    //bai 3:
+    // let arr = [];
+    // let length = arr.length;
+    // do {
+    //     length = +prompt("nhap do dai cua mang: ");
+    //     if(isNaN(length) || !Number.isInteger(length) || length <= 0){
+    //         alert("moi ban nhap lai. do dai cua chuoi la 1 so nguyen: ");
+    //     }
+    // }while ((isNaN(length) || !Number.isInteger(length) || length <= 0));
+    // for (let i = 0; i < length; i++) {
+    //     arr[i] = prompt(" nhap cac gia tri cho mang: ");
+    // }
+    // for (let j = 0; j < length; j++) {
+    //     document.write(arr[j] + " o vi tri thu : " + j + " trong mang arr" + "<br>")
+    // }
+    //bai 4:
+    // let newString = "qwertyuiop";
+    // let arr = [];
+    // arr = newString;
+    // for (let i = 0; i < arr.length; i++) {
+    //     console.log("ki tu " + arr[i] + " nam o vi tri thu: " + i + " trong chuoi");
+    // }
+    //bai 5:
+    // let string1 = prompt(" nhập chuỗi kí tự thứ 1: ");
+    // let string2 = prompt(" nhập chuỗi kí tự thứ 2: ");
+    // if(string1 === string2){
+    //     document.write("hai chuỗi của bạn giống nhau")
+    // }else{
+    //     document.write("2 chuỗi của bạn khác nhau")
+    // }
+    //bai 6:
+    let arr = [];
+    let length = arr.length;
+    do {
+        length = +prompt(" nhâp độ dài của mảng: ");
+        if(isNaN(length) || !Number.isInteger(length) || length <=0){
+            alert("mời bạn nhập lại, độ dài mảng là 1 số nguyên lớn hơn 0: ");
+        }
+    }while (isNaN(length) || !Number.isInteger(length) || length <=0);
+    for (let i = 0; i < length; i++) {
+        arr[i] = prompt(" nhập giá trị cho mảng: ");
+    }
+    for (let j = 0; j < length; j++) {
+        if(arr[j] === "-"){
+            arr[j] = "_";
+        }
+    }
+    document.write(arr);
+
+</script>
+</body>
+</html>
